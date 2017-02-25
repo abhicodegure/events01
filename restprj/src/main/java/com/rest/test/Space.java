@@ -1,0 +1,6 @@
+package com.rest.test;
+
+public enum Space {
+TERRACE,BANQUET_HALL,OPEN_LAWN,SWIMMING_POOL,CONFERENCE_HALL,BAR_LOUNGE,DANCE_BAR_LOUNGE;
+	//
+}
