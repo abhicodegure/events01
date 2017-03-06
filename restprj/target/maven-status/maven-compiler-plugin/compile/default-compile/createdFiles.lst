@@ -1,2 +1,11 @@
 com/rest/test/App.class
 com/rest/test/EntryPoint.class
+com/rest/test/VenueDao.class
+com/rest/test/VenueController.class
+com/rest/test/Coordinates.class
+com/rest/test/Venue.class
+com/rest/test/MongoHandler.class
+com/rest/test/SqlHandler.class
+com/rest/test/Space.class
+com/rest/test/LoggerHandler.class
+com/rest/test/EventsDBDataSource.class

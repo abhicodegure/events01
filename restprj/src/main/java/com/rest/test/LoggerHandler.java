@@ -64,24 +64,26 @@ public enum LoggerHandler {
 
 	public RollingFileAppender getFileAppender(String name, String fileName, String maxSize, String logLayoutPattern,
 			int maxfilesToKeep, boolean compress) {
-		final LoggerContext ctx = (LoggerContext) LogManager.getContext(false);
-		final Configuration config = ctx.getConfiguration();
-		String filePattern = fileName + ".%i";
-		if (compress == true)
-			filePattern += ".gz";
-
-		PatternLayout layout = PatternLayout.newBuilder().withConfiguration(config).withPattern(logLayoutPattern)
-				.build();
-		SizeBasedTriggeringPolicy policy = SizeBasedTriggeringPolicy.createPolicy(maxSize);
-		DefaultRolloverStrategy strategy = DefaultRolloverStrategy.createStrategy(maxfilesToKeep + "", "1", "min", null,
-				config);
-
-		RollingFileManager fileManager = RollingFileManager.getFileManager(fileName, filePattern, true, true, policy,
-				strategy, null, layout, 1024);
-		policy.initialize(fileManager);
-		RollingFileAppender appender = RollingFileAppender.createAppender(fileName, filePattern, "true", name, "true",
-				"1024", "true", policy, strategy, layout, (Filter) null, "false", "false", (String) null, config);
-		appender.start();
-		return appender;
+//		final LoggerContext ctx = (LoggerContext) LogManager.getContext(false);
+//		final Configuration config = ctx.getConfiguration();
+//		String filePattern = fileName + ".%i";
+//		if (compress == true)
+//			filePattern += ".gz";
+//
+//		PatternLayout layout = PatternLayout.newBuilder().withConfiguration(config).withPattern(logLayoutPattern)
+//				.build();
+//		SizeBasedTriggeringPolicy policy = SizeBasedTriggeringPolicy.createPolicy(maxSize);
+//		DefaultRolloverStrategy strategy = DefaultRolloverStrategy.createStrategy(maxfilesToKeep + "", "1", "min", null,
+//				config);
+//
+//		RollingFileManager fileManager = RollingFileManager.getFileManager(fileName, filePattern, true, true, policy,
+//				strategy, null, layout, 1024);
+//		policy.initialize(fileManager);
+//		RollingFileAppender appender = RollingFileAppender.createAppender(fileName, filePattern, "true", name, "true",
+//				"1024", "true", policy, strategy, layout, (Filter) null, "false", "false", (String) null, config);
+//		appender.start();
+//		return appender;
+		
+		return null;
 	}
 }

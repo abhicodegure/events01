@@ -26,5 +26,8 @@
 	<classpathentry kind="lib" path="/Users/abhinav/Downloads/log4j-core-2.7.jar"/>
 	<classpathentry kind="lib" path="/Users/abhinav/Downloads/log4j-api-2.7.jar"/>
 	<classpathentry kind="lib" path="/Users/abhinav/Downloads/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="/Users/abhinav/Downloads/persistence-api-1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/abhinav/Downloads/guava-10.0.1.jar"/>
+	<classpathentry kind="lib" path="/Users/abhinav/Downloads/guava-21.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
